@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+:root {
+    /* colores */
+    --base-blanco: #FFFFFF;
+    --base-negro: #0D0D0D;
+    --principal-violeta: #C800FF;
+    --principal-morado: #6B008E;
+
+    /* padding */
+    --padding-xs: 5px;
+    --padding-s: 10px;
+    --padding-m: 30px;
+    --padding-l: 40px;
+    --padding-xl: 110px;
+
+    /* gap */
+    --gap-s: 10px;
+    --gap-s: 30px;
+    --gap-m: 40px;
+    --gap-l: 72px;
+    --gap-xl: 80px;
+    --gap-xxl: 372px;
+    --gap-xxxl: 600px;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    width: 1440px;
+    background: var(--base-negro);
+    flex-direction: column;
+    align-items: center;
+    padding-left: 70px;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    font-family: "Anybody", sans-serif;
+    justify-content: center;
+    padding-top: var(--padding-l);
+    padding-bottom: var(--padding-l);
+    background-color: var(--base-negro);
+}
+.nav {
+    display: flex;
+    gap: var(--gap-xl);   
+}
+.nav__link {
+    font-size: 36px;
+    font-weight: 500;
+    color: var(--principal-violeta);
+    text-decoration: none;
+}
+.nav__link:hover {
+    font-weight: 700;
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+.containt__main {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    padding-top: 120px;
+    justify-content: center;
+}
+.containt__main--img {
+    display: flex;
+    height: 302px;
+    width: 1380px;
+
+}
+.containt__main--img:hover {
+    background: url(./img/Murci.png);
+    transition: transform 0.5s ease;
+}
+.content__hero{
+    display: flex;
+    width: 1380px;
+}
+.content__hero--h1 {
+    display: flex;
+    font-family: "Bebas Neue", serif;
+    font-size: 389px;
+    color: var(--principal-violeta);
+}
+
+.content__presentation {
+    display: flex;
+    width: 1440px;
+    align-items: center;
+    gap: var(--gap-m);
+    padding-bottom: var(--gap-xl);
+    justify-content: center;
+}
+.content__text--sobremi {
+    font-family: "Anybody", sans-serif;
+    font-size: 24px;
+    width: 778px;
+    text-align: justify;
+    gap: var(--gap-m);
+}
+.content__sobremi--parrafo {
+    color: var(--base-blanco);
+}
+.content__skills {
+    display: flex;
+    padding-top: var(--padding-l);
+    gap: var(--gap-l);
+    list-style-type: none;
+    justify-content: center;
+}
+.content__programas--titulo {
+    font-family: "Bebas Neue";
+    font-size: 64px;
+    color: var(--principal-violeta);
+}
+.content__programas--parrafo {
+    color: var(--base-blanco);
+}
+.content__habilidades--titulo {
+    font-family: "Bebas Neue";
+    font-size: 64px;
+    color: var(--principal-violeta);
+}
+.content__habilidades--parrafo {
+    color: var(--base-blanco);
+}
+.content__img--sobremi {
+    border-radius: 40px;
+    display: flex;
+    width: 473px;
+    height: 600px;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.content__trabajos {
+    display: flex;
+    gap: var(--gap-m);
+    align-items: center;
+    padding-bottom: var(--padding-xl);
+    justify-content: center;
+}
+.img {
+    display: flex;
+    width: 473px;
+    height: 600px;
+    border-radius: 40px;
+}
+.content__text {
+    width: 798px;
+}
+.content__titulo {
+    font-family: "Bebas Neue";
+    font-size: 128px;
+    color: var(--principal-violeta);
+}
+.content__parrafo {
+    font-family: Anybody;
+    font-size: 24px;
+    text-align: justify;
+    color: var(--base-blanco);
+}
+
+.content__contactame {
+    display: flex;
+    gap: var(--gap-xxxl);
+    padding-bottom: var(--gap-m);
+    justify-content: center;
+}
+.content__redes--titulo {
+    font-family: "Bebas Neue";
+    font-size: 64px;
+    color: var(--principal-violeta);
+}
+.content__redes--svg {
+    display: flex;
+    gap: var(--gap-m);
+}
+.content__svg--ig:hover {
+    transition: transform 0.5s ease;
+    width: 50px;
+    height: 50px;
+}
+.content__svg--wp:hover {
+    transition: transform 0.5s ease;
+    width: 50px;
+    height: 50px;
+}
+.contant__correo--titulo {
+    font-family: "Bebas Neue";
+    font-size: 64px;
+    color: var(--principal-violeta);
+    padding-left: 130px;
+}
+.content__correo {
+    text-decoration: none;
+}
+.content__correo--text {
+    font-family: Anybody;
+    color: var(--base-blanco);
+    font-size: 24px;
+    padding-left: 35px;
+}
+.content__correo--text:hover {
+    transition: transform 0.5s ease;
+    font-weight: 700;
+    padding-left: 0px;
+}
